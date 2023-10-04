@@ -1,0 +1,9 @@
+* getting started
+** sfml tutorials website
+https://www.sfml-dev.org/tutorials/2.6/
+** how to make sfml work with codeblocks
+https://www.sfml-dev.org/tutorials/2.6/start-cb-fr.php
+* oskour ça marche pas même en lisant vos ressources monsieur
+Si vous voulez utiliser sfml pour votre projet et que vous êtes
+bloqué·e, vous pouvez m'en parler et on essayera de régler le problème
+ensemble. Par contre je préviens, je suis très mauvais avec les Mac!

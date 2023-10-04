@@ -1,0 +1,4 @@
+* todo
+do simple shapes, not only text
+
+do a changing text (exemple: last time clicked pixels)
