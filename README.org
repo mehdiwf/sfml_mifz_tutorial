@@ -59,8 +59,8 @@ Here you have examples of basic sfml library usage.
 
 - levelA: simple usage and simple C++ (no class, no structures, just
   simple stuff)
-- levelB: simple usage and less simple C++ (can class, table arrays,
-  structs ect...)
+- levelB: simple usage and less simple C++ (can use class, table
+  arrays, structs ect...)
 
 in levelA:
 - level0:
