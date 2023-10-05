@@ -26,10 +26,12 @@ begin. It has sublevels going from level0 to level2:
   - sfml_button_hover_toggle_tuto: colors a rectangle in green
     if you hover your mouse
 ** level B
-level B is for basic usage of sfml AND usage of less simple c++
+level B is for basic usage of sfml AND usage of less simple C++
 objects (for instance table arrays, class...). It is recommended to
 make sure that you at least understand each tiny examples in level_A
-before going in this level.
+before going in this level. It also requires a little more knowledge
+on C++ language (but nothing too fancy, "just" simple class, or
+structures.)
 
 - level0
   - sfml_mouse_interaction_tuto: colors the line you click on in the
