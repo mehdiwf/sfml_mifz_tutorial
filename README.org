@@ -1,3 +1,5 @@
+#+OPTIONS: toc:2
+
 * getting started: this folder
 ** presentation
 The TLDR is at the end.
