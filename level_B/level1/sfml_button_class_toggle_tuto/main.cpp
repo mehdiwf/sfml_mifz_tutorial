@@ -7,13 +7,13 @@
 #include <cstdio>
 #include <cstdbool>
 
-// unfinished
+// you can click on the button and it toggles the button color
 
 // CLASS DEF---------------------------------
 
 class ToggleButton {
-  sf::Vector2f size = sf::Vector2f(20., // the size
-                                   20.);
+  sf::Vector2f size = sf::Vector2f(50., // the size
+                                   50.);
   sf::Vector2f pos = sf::Vector2f(0., // the position
                                   0.);
   sf::Color pressed_color = sf::Color::Green;
@@ -26,7 +26,14 @@ public:
   bool is_pressed();
   void toggle_state();
   void update_color();
+  sf::RectangleShape get_shape();
 };
+
+ToggleButton::ToggleButton() {
+  shape.setPosition(pos);
+  shape.setSize(size);
+  update_color();
+}
 
 bool ToggleButton::is_pressed() {
   return pressed;
@@ -41,9 +48,13 @@ void ToggleButton::update_color() {
   }
 }
 
-ToggleButton::ToggleButton() {
-  shape.setPosition(pos);
-  shape.setSize(size);
+sf::RectangleShape ToggleButton::get_shape() {
+  return shape;
+}
+
+void ToggleButton::toggle_state() {
+  pressed = !pressed;
+  update_color();
 }
 
 
@@ -59,10 +70,7 @@ int main()
     // this variable represents the mouse!
     sf::Mouse mouse;
 
-    sf::Vector2f rect_size(100., 100.);
-    sf::RectangleShape toggling_rect(rect_size);
-    sf::Vector2f rect_position(0.0, 
-                               0.0);
+    ToggleButton my_button = ToggleButton();
 
     while (window.isOpen())
     {
@@ -88,27 +96,23 @@ int main()
         break;
       case sf::Event::MouseMoved:
         {
-          // sf::Vector2i absolute_mouse_position = mouse.getPosition();
-          
-          // not sure what this is lol
-          sf::Vector2f mouse_coords = window.mapPixelToCoords(sf::Mouse::getPosition(window));
-          if (toggling_rect.getGlobalBounds().contains(mouse_coords)) {
-            toggling_rect.setFillColor(sf::Color::Green);
-          }
-          else {
-            toggling_rect.setFillColor(sf::Color::White);
-          }
         }
         break;
       case sf::Event::MouseButtonPressed:
         {
+          if ( event.mouseButton.button == sf::Mouse::Left ) {
+            sf::Vector2f mouse_coords = window.mapPixelToCoords(sf::Mouse::getPosition(window));  
+            if (my_button.get_shape().getGlobalBounds().contains(mouse_coords)) {
+              my_button.toggle_state();
+            }
+          }
         }
         break;
               }
         } // end of event handling loop
 
         window.clear();
-        window.draw(toggling_rect);
+        window.draw(my_button.get_shape());
         window.display();
     } // end of window display loop
 
