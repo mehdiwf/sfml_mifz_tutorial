@@ -1,5 +1,7 @@
 * getting started: this folder
 ** presentation
+The TLDR is at the end.
+
 This folder was created for sfml learning in the context of the 2023
 C++ programming language course in Claude Bernard University (Lyon
 1). It's composed of example codes that are heavily commented.
@@ -50,3 +52,26 @@ Si vous voulez utiliser sfml pour votre projet et que vous êtes
 bloqué·e, vous pouvez m'en parler et on essayera de régler le problème
 ensemble. Par contre je préviens, je suis très mauvais avec les ordi
 Apple!
+* TLDR (too long, didn't read)
+TLDR for impatient persons:
+
+Here you have examples of basic sfml library usage.
+
+- levelA: simple usage and simple C++ (no class, no structures, just
+  simple stuff)
+- levelB: simple usage and less simple C++ (can class, table arrays,
+  structs ect...)
+
+in levelA:
+- level0:
+  - circle display example
+- level1:
+  - text and shapes display example
+  - printing mouse click position example
+- level2:
+  - moves an object on the click position example
+  - change color when mouse on object example
+
+in levelB:
+- colors a line on the clicked position example
+- a color toggle button example
