@@ -1,0 +1,50 @@
+* getting started: this folder
+** presentation
+This folder was created for sfml learning in the context of the 2023
+C++ programming language course in Claude Bernard University (Lyon
+1). It's composed of example codes that are heavily commented.
+
+The vibe of learning on this is "monkey-see-monkey-do", it gives
+little pieces of code that are commented and that allow simple sfml
+usage.
+
+** level A
+level A is for very basic sfml usage, this is where you should
+begin. It has sublevels going from level0 to level2:
+
+- level0
+  - sfml_linux_base_tuto: displays a green circle in the
+    middle of a 200x200 window
+- level1
+  - sfml_graphics_tuto: displays a green circle, a text, and a
+    rectangle
+  - sfml_mouse_event_tuto: prints on the terminal the position
+    of your mouse if you click inside the created window
+- level2
+  - sfml_mouse_interaction_tuto: moves a circle where you
+    click, inside the window
+  - sfml_button_hover_toggle_tuto: colors a rectangle in green
+    if you hover your mouse
+** level B
+level B is for basic usage of sfml AND usage of less simple c++
+objects (for instance table arrays, class...). It is recommended to
+make sure that you at least understand each tiny examples in level_A
+before going in this level.
+
+- level0
+  - sfml_mouse_interaction_tuto: colors the line you click on in the
+    created window (it uses an array)
+- level1
+  - creates a rectangle that switch colors when you click on it (it
+    uses a created "ToggleButton" class)
+
+* getting started: online ressources
+** sfml tutorials website
+https://www.sfml-dev.org/tutorials/2.6/
+** how to make sfml work with codeblocks
+https://www.sfml-dev.org/tutorials/2.6/start-cb-fr.php
+* oskour ça marche pas même en lisant vos ressources monsieur
+Si vous voulez utiliser sfml pour votre projet et que vous êtes
+bloqué·e, vous pouvez m'en parler et on essayera de régler le problème
+ensemble. Par contre je préviens, je suis très mauvais avec les ordi
+Apple!
