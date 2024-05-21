@@ -5,11 +5,11 @@
 #include <SFML/Graphics/Color.hpp>
 #include <SFML/System/Vector2.hpp>
 
-const int nb_bird = 15;
+const int nb_bird = 30;
 
 class Flock {
 public:
-  float min_distance = 15;
+  float min_distance = 14.5;
   float neighbor_copy_distance = 60;
   Bird flock_birds[nb_bird];
   int n_birds = nb_bird;
