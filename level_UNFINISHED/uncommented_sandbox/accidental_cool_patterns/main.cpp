@@ -6,7 +6,8 @@
 #include <SFML/Graphics/RenderWindow.hpp>
 #include <SFML/Graphics/Text.hpp>
 #include <SFML/System/Vector2.hpp>
-#include <format>
+// uncomment that there seem to be a version problem
+// #include <format>
 #include <cstdio>
 #include <cstdbool>
 #include <string>
