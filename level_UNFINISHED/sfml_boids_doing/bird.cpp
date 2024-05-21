@@ -68,11 +68,8 @@ void Bird::normalize_position() {
 
 void Bird::update_position(float dt) {
   sf::Vector2f dv = (forces * dt) / mass;
-  printf("v0.x: %f\n", velocity.x);
   velocity += dv;
-  printf("v1.x: %f\n", velocity.x);
   position += velocity * dt;
-  printf("vxdt: %f\n", velocity.x * dt);
   normalize_position();
   shape.setPosition(position);
   reset_forces();
