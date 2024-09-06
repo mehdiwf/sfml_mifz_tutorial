@@ -8,9 +8,12 @@ This folder was created for sfml learning in the context of the 2023
 C++ programming language course in Claude Bernard University (Lyon
 1). It's composed of example codes that are heavily commented.
 
-The vibe of learning on this is "monkey-see-monkey-do", it gives
-little pieces of code that are commented and that allow simple sfml
-usage.
+The way of learning I imagined with this project is
+"monkey-see-monkey-do", it gives little pieces of code that are
+commented and that allow simple sfml usage. Then, from these examples,
+you can build more complex and personal projects!
+
+Take them as lego pieces you can use for your own projects.
 
 ** level A
 level A is for very basic sfml usage, this is where you should
